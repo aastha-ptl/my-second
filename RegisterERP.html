@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <!-- <meta http-equiv="refresh" content="5;url=LoginERP"> -->
+	<title>RegisterERP</title>
+	<link rel="stylesheet" href="./css&js/css/registerERP.css">
+  <link rel="stylesheet" href="./css&js/css/popupbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css&js/css/profilecard.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="left">
+        <img src="./css&js/img/BVM NEW LOGO.png" 
+        alt="BVM" width="100">
+        <h5>BIRLA VISHVAKARMA MAHAVIDHYALAYA</h5>
+         <p>Alredy Register? <a href="./LoginERP.html">Login</a></p>
+    </div>
+    <div class="right">
+        <!-- <div class="info">
+            <h3>REGISTER</h3>
+
+        </div> -->
+        <div class="container">
+            <div class="title">Registration</div>
+            <div class="content">
+              <form action="#">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name"  class="input" >
+                  </div>
+                  <div class="input-box">
+                    <span class="details">UID</span>
+                    <input type="text" placeholder="Enter your UID"   class="input">
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email"  id="email" class="input">
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your number"  id="number" class="input">
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your password"   class="input" id="passwordreg">
+                  </div>
+                <i class="fa-solid fa-eye" id="eyeicon"></i>
+
+                  <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" placeholder="Confirm your password"   class="input" id="conpasswordreg">
+
+
+                  </div>
+                </div>
+
+                <div class="button">
+                  <input type="submit" value="Register" class="input" onclick="openpopup()" >
+                </div>
+              </form>
+
+            </div>
+          </div>
+    </div>
+</div>
+<div id='card'class="popupcard">
+  <div id='upper-side'>
+    <?xml version="1.0" encoding="utf-8"?>
+   
+      <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <img src="./check-mark-verified.gif" id="checkmark" alt="Success">
+      <h3 id='status'>
+      Success
+    </h3>
+  </div>
+  <div id='lower-side'>
+    <p id='message'>
+      Congratulations, Your Account Successfully Created.
+    </p>
+    <a href="#" id="contBtn" onclick="closepopup()">Continue</a>
+  </div>
+</div>
+<script>
+  let popup = document.getElementById("card")
+  function openpopup(){
+    popup.classList.add("openpopup");
+  }
+  function closepopup(){
+    popup.classList.remove("openpopup");
+  }
+  var eye=document.getElementById("eyeicon")
+  var pass=document.getElementById("passwordreg")
+  var conpass = document.getElementById("conpasswordreg")
+  eye.onclick= function(){
+    if(pass.type == "password" || conpass.type == "password"){
+        pass.type = "text";
+        conpass.type = "text";
+      }
+      else{
+        pass.type="password";
+        conpass.type="password";
+      }
+  }
+
+ var email = document.getElementById("email");
+ var number  = document.getElementById("number");
+ function openpopup(){
+  if (isNaN(number)){  
+  document.getElementById("number").innerHTML="Enter Numeric value only";  
+  return false;  
+}else{  
+  return true;  
+  }  
+}  
+ 
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.admcard {
+    width: 190px;
+    height: 254px;
+    background: #3405a3;
+    border-radius: 15px;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: 315px;
+    display: none;
+
+   }
+
+   
+   .admcard .card-border-top {
+    width: 60%;
+    height: 3%;
+    background: #6b64f3;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+   }
+   
+   .admcard span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    font-size: 16px;
+   }
+   
+   .admcard .job {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 12px;
+   }
+   
+   /* .card .img {
+    width: 70px;
+    height: 80px;
+    background: #4723D9;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+   } */
+
+   .img img{
+    width: 70px;
+    /* height: 80px; */
+    background: #4723D9;
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 25px;
+    margin-left: 60px;
+   }
+   
+   .admcard button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    margin-top: 30px;
+    background: #4723D9;
+    color: white;
+    font-weight: 600;
+   }
+   
+   .admcard button:hover {
+    background: #534bf3;
+   }
+   .header_img .admcard:hover {
+    display: block;
+   }

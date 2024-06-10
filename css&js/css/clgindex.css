@@ -1,0 +1,48 @@
+.row-1{
+    /* top:4%; */
+     position: absolute;
+}
+.row-1 video{
+    margin-left:20px ; 
+}
+
+.navbar-brand img{
+    position: absolute;
+    left: 4%;
+}
+.navbar-brand span{
+    margin-left: 160px;
+    font-size: x-large ;
+    color: white;
+}
+.navbarbvm{
+    
+    background-color: blue;
+    color: white;
+    position: fixed;
+    /* top: 0; */
+    width: 100%;
+    display: flex;
+    z-index: 999;
+    
+}
+
+.ulnav{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 135px;
+    
+}
+.ulnav a{
+    color: white;
+    padding: 25px;
+    font-size: large;
+}
+.ulnav a:hover{
+    text-decoration: none;
+    color: white;
+
+
+}
+

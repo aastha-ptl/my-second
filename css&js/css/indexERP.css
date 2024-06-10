@@ -1,0 +1,615 @@
+/* scrollerbar */
+body::-webkit-scrollbar{
+  width: 8px;
+  /* background-color: gray; */
+}
+body::-webkit-scrollbar-track{
+  background-color: #F2F2F2;
+  border-radius: 70px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: blue;
+  border-radius: 70px;
+
+}
+
+/* for notes */
+  .card__info::-webkit-scrollbar{
+  width: 8px;
+
+}
+  .card__info::-webkit-scrollbar-track{
+  /* background-color: #F2F2F2; */
+  border-radius: 70px;
+}
+  .card__info::-webkit-scrollbar-thumb{
+  background-color: rgb(255, 255, 255);
+  border-radius: 70px;
+
+}
+.card__info::-webkit-scrollbar-corner{
+  background-color:#0697f1;
+  border-radius: 40px;
+   
+}
+
+
+
+/* #adminprofdet{
+  display: none;
+} */
+.adminprofileview{
+  display: none;
+}
+
+
+
+
+
+/* LODER  */
+#loder1{
+  height:150px;
+  width: 150px;
+  border:7px solid whitesmoke;
+  border-radius: 100%;
+  border-right-color: #0000ff;
+  animation: spin 0.9S ease infinite;
+  position: fixed;
+  margin: 235px 555px;
+  z-index: 999;
+
+
+}
+/* .loder2{
+  height:100px;
+  width: 100px;
+  border:7px solid whitesmoke;
+  border-radius: 100%;
+  border-left-color: #0000ff;
+  animation: spin 0.9S reverse infinite;
+  position: fixed;
+  margin: 25px 25px;
+} */
+@keyframes spin {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.loder{
+  position: absolute;
+  /* padding-top: 200px; */
+  /* padding-left: 200px; */
+  
+  
+}
+
+
+
+
+
+
+.maincon{
+    margin-left: 19px;
+    /* margin-top: 74px;
+    margin-right: 40px; */
+  }
+  .bvmerpname{
+    background-color: rgb(4, 159, 32);
+  
+  }
+  .bvmerpname h2{
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  /* .bvmfrontbcg{
+    background-color:white ;
+    height: 460px;
+  }
+   */
+  .bvmfrontbcg img{
+    width: 100%;
+    padding: 20px 20px;
+    height: 420px;
+  }
+  
+  .copyright{
+    background-color: steelblue;
+    margin-top: 15px ;
+  }
+  
+  .copyright h4{
+    color: white;
+    text-align: center;
+    padding: 11px;
+    font-size: medium;
+  }
+
+  .row1dash{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 45px;
+  }
+
+  .row2dash{
+    margin-top: 45px;
+    /* margin-left: 70px; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .meetcard{
+
+      width:400px;
+      height: 350px;
+      background: whitesmoke;
+      transition: .2s linear;
+      box-shadow: 1px 1px 10px lightslategray;
+      cursor: default;
+  
+  }
+  .meetname {
+    font-size: 23px;
+    margin-left: 30px;
+    margin-top: 8px;
+  }
+  .meetuser-name {
+    /* display: flex; */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .meetright-part {
+    /* width: 30%;
+    height: 100%; */
+    /* display: flex; */
+    align-items: center;
+    margin: 40px 75px;
+   
+
+  }
+  .meetcard-bottom-part{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    border: 1px solid rgb(231, 227, 227);
+    margin-top: 132px;
+    
+
+    /* border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit; */
+  }
+  .meetcard-top-part {
+    width: 88%;
+    /* height: 70%; */
+    /* padding: 15px; */
+    display: flex;
+    margin-top: 18px;
+  }
+
+  /* progress chart */
+  .progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  animation: spin 0.9S ease ;
+
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(rgb(14, 195, 4) 90%, rgb(255, 47, 0) 0);    
+  }
+
+  .attendence{
+    padding: 5px 133px;
+    
+  }
+  .attcard-bottom-part{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    border: 1px solid rgb(231, 227, 227);
+    /* justify-content: center; */
+    /* margin-top: 132px; */
+    /* border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit; */
+  }
+
+  .row3dash{
+    margin-top: 45px;
+    /* margin-left: 70px; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 40px;
+  }
+  
+  .attendence p{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    margin-left: 58px;
+  }
+
+  .attendence .prn{
+    color: rgb(3, 184, 3);
+  }
+  
+  .attendence .abn{
+    color: red;
+  }
+
+  .meetcardmain img{
+    width: 50px;
+    border-radius: 50px;
+  }
+
+  .bdaycard{
+
+    width:400px;
+    /* height: 350px; */
+    height: 100%;
+    background: whitesmoke;
+    transition: .2s linear;
+    box-shadow: 1px 1px 10px lightslategray;
+    cursor: default;
+
+}
+.bdaycard-bottom-part{
+  width: 100%;
+  /* height: 15%; */
+  padding: 15px;
+  display: flex;
+  border: 1px solid rgb(231, 227, 227);
+  margin-left: 15px;
+
+  /* margin-top: 132px; */
+  /* border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit; */
+}
+
+.meetcardmain ul li{
+  margin: 9px;
+}
+
+.row1fac{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+}
+
+.row2fac{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+}
+
+
+/* for new fec add  */
+.addfacdiv {
+  max-width: 1450px;
+  height: 54px;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 15px 30px -5px;
+  background-image: linear-gradient(144deg,#5fcdfc, #2a11cf 50%,#140679);
+  margin: auto;
+}
+
+.card__content {
+
+  background: #4723D9;
+  border-radius: 17px;
+  width: 100%;
+  height: 100%;
+}
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+ }
+ 
+
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #43c3ea;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #4306be;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: black;
+  
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #4306be;
+  
+
+ }
+ .cta:hover span{
+  color: white;
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+ }
+ 
+ .addstd{
+  margin-left: 88%;
+ }
+
+ .addregbtn{
+  
+  color: white;
+ }
+
+ .btnsubmit {
+  width: fit-content;
+  min-width: 100px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2.5px solid #E0E1E4;
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btnsubmit:hover {
+  background-color: #F2F2F2;
+  box-shadow: 0px 0px 20px -18px;
+}
+
+.btnsubmit:active {
+  transform: scale(0.95);
+}
+
+.attform{
+  /* max-width: 1200px; */
+  width: 100%;
+  /* background-color: #fff; */
+  background-color: #4723D9;
+  color: white;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.attbutton{
+ /* margin-left: 500px; */
+ /* padding:; */
+ /* margin-left: 50px; */
+ text-align: center;
+}
+.attbutton input{
+  padding: 4px;
+  padding-left: 25px;
+  padding-right: 25px;
+  /* margin-left: 50px; */
+  border-radius: 5px;
+  border: 1px solid gray;
+
+}
+
+
+
+
+
+@media(max-width: 700px){
+
+.row1dash{
+  flex-direction: column;
+  margin: 15px 120px;
+}
+.row2dash{
+  flex-direction: column;
+  margin: 15px 120px;
+
+}
+.row3dash{
+  flex-direction: column;
+  margin: 15px 120px;
+
+}
+.card{
+  margin-top: 40px;
+}
+
+.notecard{
+  margin-top: 30px;
+}
+.meetcard{
+  margin-top: 40px;
+}
+.bdaycard{
+  margin-top: 40px;
+}
+}
+@media(max-width: 420px){
+
+  .notecard{
+    margin-top: 30px;
+    height: 100%;
+    width: 300px;
+
+
+  }
+  .row1dash{
+    flex-direction: column;
+    margin: 15px 50px;
+  }
+  .row2dash{
+    flex-direction: column;
+    margin: 15px 50px;
+  
+  }
+  .row3dash{
+    flex-direction: column;
+    margin: 15px 50px;
+  
+  }
+  .card{
+    margin-top: 3 0px;
+    width: 300px;
+    height: 220px;
+
+  }
+  .attendence{
+    padding: 5px 95px;
+    
+  }
+  
+
+  .meetcard{
+    margin-top: 30px;
+    width: 300px;
+    height: 100%;
+
+
+  }
+  .bdaycard{
+    margin-top: 30px;
+    width: 300px;
+    height: 100%;
+
+  }
+  }
+
+
+  /* 390 */
+  @media(max-width: 390px){
+    .meetright-part {
+
+      align-items: center;
+      margin: 45px 55px;
+     
+  
+    }
+    .notecard{
+      margin-top: 30px;
+      height: 100%;
+      width: 220px;
+  
+  
+    }
+    .row1dash{
+      flex-direction: column;
+      margin: 10px 40px;
+    }
+    .row2dash{
+      flex-direction: column;
+      margin: 10px 40px;
+    
+    }
+    .row3dash{
+      flex-direction: column;
+      margin: 10px 40px;
+    
+    }
+    .card{
+      margin-top: 3 0px;
+      width: 280px;
+      height: 220px;
+  
+    }
+    .attendence{
+      padding: 5px 95px;
+      
+    }
+    
+  
+    .meetcard{
+      margin-top: 30px;
+      width: 280px;
+      height: 100%;
+  
+  
+    }
+    .bdaycard{
+      margin-top: 30px;
+      width: 280px;
+      height: 100%;
+  
+    }
+    }

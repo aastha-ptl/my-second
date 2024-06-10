@@ -1,0 +1,41 @@
+tr{
+    border: 1px solid gray;
+}
+th{
+    padding: 10px;
+    /* width: 20%; */
+}
+table{
+    margin-top: 20PX;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+}
+th{
+    border: 1px solid gray;
+    background-color: blue;
+    color: white;
+}
+td{
+    border: 1px solid gray;
+}
+
+.con{
+    width: 120px;
+}
+.table {
+    padding-left: 30px;
+    padding-right: 50px;
+
+
+}
+
+.no{
+    width: 0%;
+}
+.exname{
+    width: 15%;
+}
+.subcode{
+    width: 8%;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTENDENCE</title>
+        <!-- links -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- css    -->
+        <link rel="stylesheet" href="./css&js/css/sidebarERP.css">
+        <link rel="stylesheet" href="./css&js/css/dashboardcardstyle.css">
+        <link rel="stylesheet" href="./css&js/css/indexERP.css">
+        <link rel="stylesheet" href="./css&js/css/notesstyle.css">
+        <!-- <link rel="stylesheet" href="./css&js/css/studenttable.css"> -->
+        <link rel="stylesheet" href="./css&js/css/FACPROFILE.css">
+        <link rel="stylesheet" href="./css&js/css/stdtable2.css">
+        <link rel="stylesheet" href="./css&js/css/profilecard.css">
+        <script src="./css&js/js/slidebar.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+          $(document).ready(function () {
+    $("#adminimgclick").click(function () {
+        $("#admincarddtl").hide(100);
+    });
+
+    $("#adminimgclick").click(function () {
+        $("#admincarddtl").show();
+    });
+});
+
+$(document).ready(function () {
+  $("#nav_link").click(function () {
+      $("#slidebar-hover").hide(100);
+  });
+
+  $("#nav_link").click(function () {
+      $("#slidebar-hover").show();
+  });
+});
+$(document).ready(function () {
+  $("#nav_link-1").click(function () {
+      $("#slidebar-hover-1").hide(100);
+  });
+
+  $("#nav_link-1").click(function () {
+      $("#slidebar-hover-1").show();
+  });
+});
+
+</script>
+        <!-- <script src="./css&js/js/studentERP.js"></script> -->
+</head>
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="header_img"> <img class="adminprof" id="adminimgclick" src="./css&js/img/faculty.png" alt=""  onclick="adminprof()"> </div>
+        <div class="adminnameheader">Admin</div>
+        
+        <div class="admcard" id="admincarddtl">
+          <div class="card-border-top">
+          </div>
+          <div class="img"><img src="./css&js/img/faculty.png" alt="">
+          </div>
+          <span> ADMIN</span>
+          <p class="job"> IT,HOD</p>
+          <button> Profile
+          </button>
+        </div>    </header>
+        <div class="l-navbar" id="nav-bar">
+          <nav class="nav">
+              <div>
+                   <a href="./dashboard(admin)ERP.html" class="bvmlogobar"><img class="bvmlogo" src="./css&js/img/BVM NEW LOGO.png " alt=""><span class="navlogoname">BIRLA VISHVAKARMA MAHAVIDHYALAYA</span> </a>
+                  <div class="nav_list">
+                   <a href="./dashboard(admin)ERP.html"class="nav_link " > <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name active">Dashboard</span> </a>
+                          <a href="#" class="nav_link" id="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">FACULTY  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down fa-lg"></i> </span> </a>
+                    <div id="slidebar-hover" class="slidebar-hover">
+                    <a href="./addfaculty.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">ADD FACULTY</span> </a>
+                    <a href="./FacultyList.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">FACULTY LIST</span> </a>
+                    <a href="./facultyERP.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">FACULTY DETAILS</span> </a>
+                  </div>
+  
+                    <a href="#" class="nav_link" id="nav_link-1"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">STUDENTS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-angle-down fa-lg"></i></span> </a>
+                    <div id="slidebar-hover-1" class="slidebar-hover">
+                      <a href="./addStudent.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">ADD STUDENT</span> </a>
+                      <a href="./studentERP.html" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">STUDENT LIST</span> </a>
+                    </div>
+  
+                    <a href="./attendence.html" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Attendence</span> </a> 
+                      <a href="./exam.html" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span class="nav_name">EXAM</span> </a>
+              
+                    <!-- <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a>  -->
+              </div>
+              </div> <a href="./LoginERP.html" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+          </nav>
+      </div>
+    <!--Container Main start-->
+    <div class="height-100 bg-light">
+        <!-- <h4>Main Components</h4> -->
+       
+        <h4>ATTENDENCE DASHBOARD</h4>
+        <div class="facdet">
+          <div class="facform">
+              <div class="title">View Attendence</div>
+              <div class="content">
+                <form action="#">
+                  <div class="user-details">
+                      <div class="input-box">
+                          <span class="details">Select Class</span>
+                          <select name="" id="" class="input">
+                            <option value="Select Class" class="input">Select  Class</option>
+                            <option value="">C++</option>
+                            <option value="">DBMS</option>
+                            <option value="">Python</option>
+                            <option value="">DSA</option>
+                          </select>
+                        </div>
+                        <div class="input-box">
+                          <span class="details">Select Date</span>
+                          <input type="date" name="" id="">
+                        </div>
+                  </div>
+                  
+                  <div class="button">
+                    <!-- <input type="submit" value="BACK"> -->
+                    <input type="submit" value="SUBMIT" onclick="viewtbl()">
+                    <input type="reset" value="RESET">
+                    
+
+      
+                  </div>
+                </form>
+              </div>
+            </div>
+              </div>
+
+<div class="table" id="atttable" > 
+  <table>
+    <thead class="dark">
+      <tr>
+        <th scope="col">UID</th>
+        <th scope="col">FULLNAME</th>
+        <th scope="col">EMAIL-ID</th>
+        <th class="con" scope="col">CONTACT</th>
+        <th class="att" scope="col">GENDER</th>
+        <th class="att" scope="col">PRESENT</th>
+        <th class="att" scope="col">ABSENT</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">23IT417</td>
+        <td>Aastha Patel</td>
+        <td>aasthasp25@gmail.com</td>
+        <td>7202045251</td>
+        <td>Female</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+
+        
+      </tr>
+	        <tr>
+        <td scope="row">23IT477</td>
+        <td>Nandni Parekh</td>
+        <td>nandniparekh@gmail.com</td>
+        <td>7235251612</td>
+        <td>Female</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+
+        
+      </tr>      <tr>
+        <td scope="row">23IT424</td>
+        <td>Saniya Masih</td>
+        <td>Saniya12@gmail.com</td>
+        <td>6355914917</td>
+        <td>Female</td>
+        <td><input type="checkbox"></td>
+        <td><input type="checkbox"></td>
+
+        
+      </tr>
+      
+
+        
+      
+    </tbody>
+  </table>
+  </div>
+  <div class="attbutton">
+    <input type="submit" value="SUBMIT">
+    <input type="reset" value="RESET">
+    <input type="submit" value="EDIT">
+
+
+  </div>
+  
+</body>
+</html>

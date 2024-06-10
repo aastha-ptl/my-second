@@ -1,0 +1,51 @@
+.noties{
+  margin-left: 30px;
+
+  
+  
+}
+.notice-card{
+  overflow: scroll;
+
+}
+.notice-card::-webkit-scrollbar{
+  width: 8px;
+}
+.notice-card::-webkit-scrollbar-track{
+  background-color: #F2F2F2;
+  border-radius: 70px;
+}
+.notice-card::-webkit-scrollbar-thumb{
+  background-color: blue;
+  border-radius: 70px;
+}
+.noties .date-1 {
+  background-color: green;
+  border-radius: 20px;
+  padding: 4px;
+  font-size: small;
+  color: white;
+  
+}
+.noties .date-2 {
+  background-color: rgb(78, 13, 207);
+  border-radius: 20px;
+  padding: 4px;
+  font-size: small;
+  color: white;
+  
+}
+.noties .date-3 {
+  background-color: rgb(236, 169, 10);
+  border-radius: 20px;
+  padding: 4px;
+  font-size: small;
+  color: white;
+  
+}
+.notice-head{
+  margin-top: 8px;
+}
+.hr{
+  margin-top:0%;
+}

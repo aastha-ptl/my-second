@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <h2>Javascript Quiz App</h2>
+    <div id="quetions"></div>
+    <button id="submit">submit</button>
+    <div id="result"></div>
+    <script>
+        const question = document.getElementById('question');
+        const submitbtn = document.getElementById('submit');
+        const resultdiv = document.getElementById('result');
+        
+        // quetion in array 
+        const myquestion =[
+            {
+                question : "what is you college name ?",
+                answer : {
+                a:"BVM",
+                b :"GCET",
+                c :"CHARUSAT"
+            },
+             CorrectAnswer:"a"
+            },
+            {
+                question : "where are you from ?",
+                answer : {
+                a:"SURAT",
+                b :"ANAND",
+                c :"BARODA"
+            },
+             CorrectAnswer:"b"
+            },
+            {
+                question : "what is you current semester in your college ?",
+                answer : {
+                a:"1",
+                b :"3",
+                c :"2"
+            },
+             CorrectAnswer:"c"
+            }
+        ];
+            function buildQuiz(){
+                const output=[]
+                // on quetion start foreach loop 
+                myquestion.forEach((currentQuestion,questionNumber) =>{
+                    const answer = []
+                    for(foucs in currentQuestion.answer){
+                        answer.push(
+                            // `<label><input type="radio" name="question${questionNumber} value="${focus}"/>${foucs} : ${currentQuestion.answer[foucs]}</label>`
+                            `<label><input type="radio" name="question${questionNumber}" value="${focus}" />${focus} :${currentQuestion.answers[focus]}</label>
+                        `    
+                        )
+                    }
+                    output.push(
+                        `<div class = "question">${currentQuestion.question}</div><div class = "answer">${answer.join('')}</div>`
+                    )
+                })
+                // console.log(output);
+                
+                question.innerHTML = output.join('')
+
+            }
+            function showresult(){
+                    const answerdiv =question.querySelectorAll('.answer')
+                    let NumCorrect = 0
+                    myquestion.forEach((currentQuestion,questionNumber)=>{
+                    // find selected answer 
+                    const answers = answerdiv[questionNumber]
+                    const selector = `input[name=question${questionNumber}]:checked`;
+                    const userAnswer = (answers.querySelector(selector) || {}).value
+                    if(userAnswer === currentQuestion.CorrectAnswer){
+                        NumCorrect++
+                        answerdiv[questionNumber].style.color = 'green' 
+                    } else{
+                        answerdiv[questionNumber].style.color = 'red' 
+                    }
+                })
+                resultdiv.innerHTML = `${NumCorrect} Out Of ${myquestion.length}`
+            }
+            buildQuiz()
+            submitbtn.addEventListener('click',showresult)
+    </script>
+</body>
+</html>
